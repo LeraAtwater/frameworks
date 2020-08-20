@@ -31,7 +31,7 @@ body {
 .navbar {
     background-color: #512da8;
 }
-#Navbar span.fa, footer span.fa {
+#Navbar span, footer span, .contact-buttons span {
     margin-right: 0.4em;
 }
 footer address .fa {
@@ -39,4 +39,11 @@ footer address .fa {
 }
 footer .social .fa {
     color: #fff;
+}
+.breadcrumb-item.active {
+    color: #512da8;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #512da8;
+    content: "\00BB";
 }
