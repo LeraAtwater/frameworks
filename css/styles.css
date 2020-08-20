@@ -31,3 +31,12 @@ body {
 .navbar {
     background-color: #512da8;
 }
+#Navbar span.fa, footer span.fa {
+    margin-right: 0.4em;
+}
+footer address .fa {
+    color: #512da8;
+}
+footer .social .fa {
+    color: #fff;
+}
