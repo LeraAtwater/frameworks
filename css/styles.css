@@ -47,3 +47,6 @@ footer .social .fa {
     color: #512da8;
     content: "\00BB";
 }
+.card-header {
+    background-color: #512da8;
+}
