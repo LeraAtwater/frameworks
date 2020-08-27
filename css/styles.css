@@ -96,3 +96,10 @@ footer .social .fa {
 #tableReserve .btn-success.active {
 	box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, .5);
 }
+
+#carouselButton {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
