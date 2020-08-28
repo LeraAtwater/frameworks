@@ -115,6 +115,25 @@ address {
     z-index: 1;
 }
 
-#tableReserve .btn-success.active {
+#reserveModal .btn-success.active {
     box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, .5);
+}
+
+.modal {
+    .modal-header {
+        background-color: $background-dark;
+        color: floralwhite;
+
+        button {
+            color: floralwhite;
+        }
+    }
+
+    .modal-body {
+        background-color: $background-pale;
+    }
+
+    .modal-footer {
+        background-color: $background-pale;
+    }
 }

@@ -48,7 +48,7 @@
                         </li>
                     </ul>
                     <span class="navbar-text">
-                        <a class="btn btn-lg btn-dark" data-toggle="modal" data-target="#loginModal" href="#">
+                        <a class="btn btn-lg btn-dark" id="loginButton" href="#">
                             <span class="fas fa-sign-in-alt"></span>
                             Login
                         </a>
@@ -92,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div id="tableReserve" class="modal fade" role="dialog">
+            <div id="reserveModal" class="modal fade" role="dialog">
                 <div class="modal-dialog modal-lg" role="content">
                     <!-- Modal content-->
                     <div class="modal-content">
@@ -181,7 +181,7 @@
                         </div>
                         <div class="col-12 col-sm-6">
                             <img class="img-fluid col-6 col-sm-6" src="img/logo.png" alt="Restaurant logo">
-                            <a href="#" role="button" title="Reserve a table" class="btn btn-warning btn-block col-6 col-sm-6 d-sm-inline offset-sm-2 my-3" data-toggle="modal" data-target="#tableReserve">Reserve Table</a>
+                            <a href="#" id="reserveButton" role="button" title="Reserve a table" class="btn btn-warning btn-block col-6 col-sm-6 d-sm-inline offset-sm-2 my-3 text-white">Reserve Table</a>
                         </div>
                     </div>
                 </header>
@@ -366,17 +366,26 @@
                                             $(document).ready(function() {
                                                 $('#mycarousel').carousel({interval: 2000});
                                                 $("#carouselButton").click(function(){
-                                            if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                                                $("#mycarousel").carousel('pause');
-                                                $("#carouselButton").children("span").removeClass('fa-pause');
-                                                $("#carouselButton").children("span").addClass('fa-play');
-                                            }
-                                            else {
-                                                $("#mycarousel").carousel('cycle');
-                                                $("#carouselButton").children("span").removeClass('fa-play');
-                                                $("#carouselButton").children("span").addClass('fa-pause');
-                                            }
-                                        });
+                                                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+                                                    $("#mycarousel").carousel('pause');
+                                                    $("#carouselButton").children("span").removeClass('fa-pause');
+                                                    $("#carouselButton").children("span").addClass('fa-play');
+                                                }
+                                                else {
+                                                    $("#mycarousel").carousel('cycle');
+                                                    $("#carouselButton").children("span").removeClass('fa-play');
+                                                    $("#carouselButton").children("span").addClass('fa-pause');
+                                                    }
+                                                });
+
+                                                $('#loginButton').click(function(){
+                                                    $('#loginModal').modal('toggle');
+                                                });
+
+                                                $('#reserveButton').click(function(){
+                                                    $('#reserveModal').modal('toggle');
+                                                });
+
                                             });
                                         </script>
                                     </body>
