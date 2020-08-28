@@ -1,30 +1,33 @@
+@charset "UTF-8";
 body {
   padding: 50px 0 0;
   z-index: 0;
 }
-.breadcrumb-item.active {
-  color: #512DA8;
-}
+
 .breadcrumb-item + .breadcrumb-item::before {
   color: #512DA8;
-  content: "\00BB";
+  content: "»";
 }
+
 .row-header {
   margin: 0 auto;
   padding: 20px 0;
 }
+
 .row-content {
   margin: 0 auto;
   padding: 50px 0;
   border-bottom: 1px ridge;
   min-height: 400px;
 }
+
 .jumbotron {
   margin: 0 auto;
   padding: 70px 30px;
   background: #9575CD;
   color: floralwhite;
 }
+
 .footer {
   margin: 0 auto;
   padding: 20px 0;
@@ -36,9 +39,11 @@ body {
 .footer .social .fa {
   color: floralwhite;
 }
+
 .contact-buttons span {
   margin-right: 0.4em;
 }
+
 address {
   font-size: 80%;
   margin: 0;
@@ -47,24 +52,28 @@ address {
 address .fa {
   color: #512DA8;
 }
+
 .card-header {
   background-color: #512DA8;
 }
 .card-header small {
   margin-left: 0.5em;
 }
+
 .navbar {
   background-color: #512DA8;
 }
 .navbar span {
   margin-right: 0.4em;
 }
+
 .tab-content {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 1em;
 }
+
 .carousel {
   background-color: #512DA8;
 }
@@ -80,12 +89,14 @@ address .fa {
 .carousel .carousel-item p {
   background-color: rgba(121, 114, 140, 0.7);
 }
+
 #carouselButton {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: 1;
 }
+
 #tableReserve .btn-success.active {
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
