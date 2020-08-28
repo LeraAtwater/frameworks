@@ -1,0 +1,105 @@
+.jumbotron {
+	padding: 70px 30px;
+	margin: 0 auto;
+	color: floralwhite;
+	background-color: #9575cd;
+}
+
+.row-header {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.row-content {
+	margin: 0 auto;
+	padding: 50px 0;
+	border-bottom: 1px ridge;
+	min-height: 400px;
+}
+
+.footer {
+	margin: 0 auto;
+	padding: 20px 0;
+	background-color: #d1c4e9;
+}
+
+.address {
+	font-size: 80%;
+	margin: 0;
+	color: #0f0f0f;
+}
+
+body {
+	padding: 50px 0 0;
+	z-index: 0;
+}
+
+.navbar {
+	background-color: #512da8;
+}
+
+#Navbar span, footer span, .contact-buttons span {
+	margin-right: 0.4em;
+}
+
+footer address .fa {
+	color: #512da8;
+}
+
+footer .social .fa {
+	color: #fff;
+}
+
+.breadcrumb-item.active {
+	color: #512da8;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+	color: #512da8;
+	content: "\00BB";
+}
+
+.card-header {
+	background-color: #512da8;
+}
+
+.card-header small {
+	margin-left: .5em;
+}
+
+.tab-content {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 1em;
+}
+
+.carousel {
+	background: #512DA8;
+}
+
+.carousel-item {
+	height: 300px;
+}
+
+.carousel-item img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 300px;
+}
+
+.carousel-item p {
+	background-color: rgba(121, 114, 140, 0.7);
+}
+
+#tableReserve .btn-success.active {
+	box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, .5);
+}
+
+#carouselButton {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}

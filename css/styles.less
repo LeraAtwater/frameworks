@@ -1,0 +1,125 @@
+//color
+@light-gray : #DDD;
+@background-dark : #512DA8;
+@background-light: #9575CD;
+@background-pale : #D1C4E9;
+
+//Height
+@carousel-item-height: 300px;
+
+
+body {
+    padding: 50px 0 0;
+    z-index: 0;
+}
+
+.zero-margin (@pad-up-dn: 0, @pad-left-right: 0) {
+    margin: 0 auto;
+    padding: @pad-up-dn @pad-left-right;
+}
+
+.breadcrumb-item.active {
+    color: @background-dark;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: @background-dark;
+    content: "\00BB";
+}
+
+.row-header {
+    .zero-margin(20px, 0);
+}
+
+.row-content {
+    .zero-margin(50px, 0);
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.jumbotron {
+    .zero-margin(70px, 30px);
+    background: @background-light;
+    color: floralwhite;
+}
+
+.footer {
+    .zero-margin(20px, 0);
+    background-color: @background-pale;
+
+    span {
+        margin-right: .4em;
+    }
+
+    .social .fa {
+        color: floralwhite;
+    }
+}
+
+.contact-buttons span {
+    margin-right: .4em;
+}
+
+address {
+    font-size: 80%;
+    margin: 0;
+    color: #0f0f0f;
+
+    .fa {
+        color: @background-dark;
+    }
+}
+
+.card-header {
+    background-color: @background-dark;
+
+    small {
+        margin-left: .5em;
+    }
+}
+
+.navbar {
+    background-color: @background-dark;
+
+    span {
+        margin-right: .4em;
+    }
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 1em;
+}
+
+.carousel {
+    background-color: @background-dark;
+
+    .carousel-item {
+        height: @carousel-item-height;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 300px;
+        }
+
+
+        p {
+            background-color: rgba(121, 114, 140, 0.7);
+        }
+    }
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#tableReserve .btn-success.active {
+    box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, .5);
+}
